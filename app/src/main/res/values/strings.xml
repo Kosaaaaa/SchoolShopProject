@@ -22,4 +22,7 @@
     <string name="login_user_register_btn">Register</string>
     <string name="order_add_btn">Add</string>
     <string name="menu_logout_user">Logout</string>
+    <string name="menu_author">Author</string>
+    <string name="author_info">Author: Oskar Kosobucki</string>
+    <string name="author_date" translatable="false">12.03.2022</string>
 </resources>

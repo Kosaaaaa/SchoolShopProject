@@ -105,7 +105,7 @@ public class MainActivity extends BaseActivity {
 
         currentOrder.addOrderLine(currentProduct, qtySlider.getValue());
         cartAdapter.notifyDataSetChanged();
-
+        log_info(String.valueOf(cartAdapter.getCount()));
 
         priceTotal += currentProduct.getPrice() * qtySlider.getValue();
         priceTotalEt.setText(priceTotal + " " + CURRENCY);
@@ -121,7 +121,7 @@ public class MainActivity extends BaseActivity {
 
     private void clearOrder() {
         currentOrder = new OrderModel(uid);
-        cartAdapter.clear();
+        cartAdapter.orderLines = currentOrder.getOrderLines();
         cartAdapter.notifyDataSetChanged();
         priceTotalEt.setText("0");
     }

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--    <item-->
-<!--        android:id="@+id/menu_create_order"-->
-<!--        android:title="@string/menu_create_order" />-->
-<!--    <item-->
-<!--        android:id="@+id/menu_login_user"-->
-<!--        android:title="@string/menu_login_user" />-->
-<!--    <item-->
-<!--        android:id="@+id/menu_register_user"-->
-<!--        android:title="@string/menu_register_user" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/menu_create_order"-->
+    <!--        android:title="@string/menu_create_order" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/menu_login_user"-->
+    <!--        android:title="@string/menu_login_user" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/menu_register_user"-->
+    <!--        android:title="@string/menu_register_user" />-->
     <item
         android:id="@+id/menu_logout_user"
         android:title="@string/menu_logout_user" />
+    <item
+        android:id="@+id/menu_author"
+        android:title="@string/menu_author" />
+
 
 </menu>

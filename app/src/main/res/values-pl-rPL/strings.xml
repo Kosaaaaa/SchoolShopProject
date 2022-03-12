@@ -23,4 +23,6 @@
     <string name="login_user_register_btn">Zarejestruj się</string>
     <string name="order_add_btn">Dodaj</string>
     <string name="menu_logout_user">Wyloguj</string>
+    <string name="menu_author">Autor</string>
+    <string name="author_info">Autor: Oskar Kosobucki</string>
 </resources>

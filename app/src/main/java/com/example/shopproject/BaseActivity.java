@@ -29,13 +29,15 @@ public class BaseActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.menu_logout_user) {
             log_info("menu_logout_user");
             userLogout();
+        } else if (id == R.id.menu_author) {
+            log_info("menu_author");
+            switchActivity(AuthorActivity.class);
         } else {
             throw new IllegalStateException("Unexpected value: " + id);
         }

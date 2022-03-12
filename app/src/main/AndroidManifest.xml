@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShopProject">
         <activity
+            android:name=".AuthorActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterUserActivity"
             android:exported="false" />
         <activity

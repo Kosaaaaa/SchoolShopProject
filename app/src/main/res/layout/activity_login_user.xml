@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginUserActivity">
+
+
+    <EditText
+        android:id="@+id/login_user_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_user_password"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="emailAddress"
+        android:hint="@string/login_user_email"
+
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/login_user_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_user_login_btn"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="password"
+        android:hint="@string/login_user_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_user_login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_user_login_btn" />
+
+    <Button
+        android:id="@+id/login_user_register_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_user_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/login_user_register_btn" />
+
+
+</RelativeLayout>

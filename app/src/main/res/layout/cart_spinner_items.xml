@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/cartDeleteBtn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_delete_24" />
+
+
+    <ImageView
+        android:id="@+id/cartImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cartDeleteBtn"
+        android:contentDescription="@string/imagePlaceholderDesc"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/cartNameView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cartImageView"
+        android:padding="10dp"
+        android:textColor="#131313" />
+
+    <TextView
+        android:id="@+id/cartQtyView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/cartNameView"
+        android:padding="10dp"
+        android:textColor="#131313" />
+
+
+    <TextView
+        android:id="@+id/cartPriceView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/cartQtyView"
+        android:padding="10dp"
+        android:textColor="#131313" />
+
+
+</RelativeLayout>

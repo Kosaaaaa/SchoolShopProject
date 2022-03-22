@@ -31,6 +31,10 @@ public class OrderLineModel {
         return tableName;
     }
 
+    public Double getPriceTotal() {
+        return this.qty * this.product_id.getPrice();
+    }
+
     public static String getCreateTableQuery() {
         return String.format("CREATE TABLE %s (\n" +
                 "    id INTEGER PRIMARY KEY AUTOINCREMENT,\n" +

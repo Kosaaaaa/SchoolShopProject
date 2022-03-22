@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shopproject.models.OrderLineModel;
 import com.example.shopproject.models.OrderModel;
 import com.example.shopproject.models.ProductModel;
 import com.google.android.material.slider.Slider;
@@ -106,8 +107,11 @@ public class MainActivity extends BaseActivity {
         currentOrder.addOrderLine(currentProduct, qtySlider.getValue());
         cartAdapter.notifyDataSetChanged();
         log_info(String.valueOf(cartAdapter.getCount()));
+        priceTotal = 0;
 
-        priceTotal += currentProduct.getPrice() * qtySlider.getValue();
+        for (OrderLineModel orderLineModel : this.currentOrder.getOrderLines()) {
+            priceTotal += orderLineModel.getPriceTotal();
+        }
         priceTotalEt.setText(priceTotal + " " + CURRENCY);
     }
 
